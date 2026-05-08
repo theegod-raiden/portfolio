@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Blossom Osigimo — Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-<link href="raiden portfolio.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -202,18 +202,7 @@
   Designed & built by <span>Blossom Raiden Osigimo</span> · 2025
 </footer>
 
-<script>
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), i * 80);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  reveals.forEach(el => observer.observe(el));
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>

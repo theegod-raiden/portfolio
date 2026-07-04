@@ -233,6 +233,14 @@
     font-weight: 500;
   }
 
+  .section-label1 {
+    color: #c8ff42;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
   .section-title {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -240,6 +248,12 @@
     line-height: 1.1;
     letter-spacing: -0.03em;
     margin-bottom: 3.5rem;
+  }
+
+  .skill-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   /* ABOUT */
@@ -250,6 +264,20 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+  }
+
+  .about-right{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
+}
+
+  .profile-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .about-text { color: var(--muted); font-size: 1.05rem; font-weight: 300; }
